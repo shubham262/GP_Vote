@@ -1,0 +1,78 @@
+.home {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	z-index: 1;
+
+	.titleLists {
+		display: flex;
+		align-self: stretch;
+		flex-direction: column;
+		gap: 12px;
+		margin: 48px 24px 24px 24px;
+
+		.titleCards {
+			border-radius: 8px;
+			background-color: #eaf4e1;
+			border: 1px solid #c7e2b4;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.titleButtonWraper {
+				display: flex;
+				gap: 12px;
+				align-items: center;
+				.radioButton {
+					width: 16px;
+					height: 16px;
+					border: 2px solid #ccc;
+					border-radius: 50%;
+					cursor: pointer;
+				}
+			}
+
+			.closeBtnWrapper {
+				cursor: pointer;
+			}
+		}
+
+		.titleInputForm {
+			margin-top: 12px;
+			width: 100%;
+			padding: 12px;
+			border-radius: 8px;
+			border: 1px solid #dcdcdc;
+			font-size: 16px;
+			display: flex;
+			background-color: #f8f8f8;
+			outline: none;
+			transition: border 0.3s ease;
+		}
+		.titleInputForm::placeholder {
+			color: #999999;
+		}
+
+		.titleInputForm:focus {
+			border-color: #7dbb67;
+		}
+
+		.addtitleButtonContainer {
+			/* margin-top: 12px; */
+			background-color: #000;
+			color: #fff;
+			padding: 12px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 8px;
+			cursor: pointer;
+			width: 100px;
+			height: 44.5px;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+.authHandlerParentContainer {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	.subContainer {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		.authHeader {
+			display: flex;
+			align-self: stretch;
+			padding: 16px;
+			color: #a2a3a5;
+			font-size: 24px;
+			font-weight: 600;
+		}
+		.contentContainer {
+			display: flex;
+			flex: 1;
+			align-self: stretch;
+			justify-content: center;
+			align-items: center;
+
+			.contentCard {
+				max-width: 360px;
+				width: 360px;
+				height: fit-content;
+				border-radius: 1.25rem;
+				// padding: 24px;
+				background-color: #fff;
+				// border: 2px solid red;
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+
+				.topWrapper {
+					display: flex;
+					flex-direction: column;
+					gap: 16px;
+					padding: 24px;
+					padding-bottom: 0px;
+					.iconContainer {
+						width: 64px;
+						height: 64px;
+						border-radius: 1000px;
+						background: rgba(19, 21, 23, 0.04);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					.welcomeText {
+						color: rgba(19, 21, 23, 1);
+						font-size: 22px;
+						font-weight: 600;
+						line-height: 26.4px;
+						text-align: left;
+					}
+					.subHeaderTitle {
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 21px;
+						text-align: left;
+						color: rgba(19, 21, 23, 0.64);
+					}
+					.emailBtn {
+						width: 100%;
+						background-color: #979798;
+						font-size: 16px;
+						font-weight: 600;
+						padding-top: 2px;
+						padding-bottom: 2px;
+						color: #fff;
+						box-shadow: none;
+					}
+				}
+
+				.authfooter {
+					padding: 24px;
+					border-top: 1px solid #13151714;
+					align-self: stretch;
+					.googleBtn {
+						width: 100%;
+						background-color: #1315170a;
+						box-shadow: none;
+						color: #646566;
+						font-size: 16px;
+						font-weight: 600;
+						padding-top: 2px;
+						padding-bottom: 2px;
+					}
+					.googleBtn:hover {
+						background-color: #131517a3;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

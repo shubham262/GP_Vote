@@ -1,0 +1,19 @@
+.App {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+
+	.backgroundWrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(https://lu.ma/signin/gradient-light.png);
+		background-size: cover;
+		background-position: center;
+		-webkit-filter: blur(72px);
+		filter: blur(72px);
+		z-index: 0;
+	}
+}
